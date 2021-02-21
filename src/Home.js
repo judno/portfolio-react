@@ -1,26 +1,30 @@
-import { Hero } from './Hero';
-import { Product } from './Product';
+import { Hero } from "./Hero";
+import { Product } from "./Product";
+import hoopsImage from "./images/hoops.png";
+import weatherWearImage from "./images/weather-wear.png";
+import aightbetImage from "./images/aightbet.png";
+import githubIcon from "./images/github-dark.png";
 
 const projects = [
   {
-    name: 'Book search',
-    link: 'https://book-search-judno.herokuapp.com/',
-    github: 'https://github.com/judno/book-search',
+    name: "Book search",
+    link: "https://book-search-judno.herokuapp.com/",
+    github: "https://github.com/judno/book-search",
   },
   {
-    name: 'Weather dashboard',
-    link: 'https://judno.github.io/weatherDashboard/',
-    github: 'https://github.com/judno/weatherDashboard',
+    name: "Weather dashboard",
+    link: "https://judno.github.io/weatherDashboard/",
+    github: "https://github.com/judno/weatherDashboard",
   },
   {
-    name: 'Workout tracker',
-    link: 'https://workout-tracker-123.herokuapp.com/',
-    github: 'https://github.com/judno/workout-tracker',
+    name: "Workout tracker",
+    link: "https://workout-tracker-123.herokuapp.com/",
+    github: "https://github.com/judno/workout-tracker",
   },
   {
-    name: 'Budget tracker',
-    link: 'https://budget-tracker-judno.herokuapp.com/',
-    github: 'https://github.com/judno/budget-tracker',
+    name: "Budget tracker",
+    link: "https://budget-tracker-judno.herokuapp.com/",
+    github: "https://github.com/judno/budget-tracker",
   },
 ];
 
@@ -51,7 +55,7 @@ export function Home() {
       </Hero>
       <Product
         name="Aightbet"
-        img="/aightbet.png"
+        img={aightbetImage}
         link="https://aightbet.herokuapp.com/"
         github="https://github.com/judno/aightbet"
       >
@@ -61,7 +65,7 @@ export function Home() {
       <Product
         dark
         name="Hoops"
-        img="/hoops.png"
+        img={hoopsImage}
         link="https://hoops-judno.herokuapp.com/"
         github="https://github.com/judno/hoops"
       >
@@ -69,7 +73,7 @@ export function Home() {
       </Product>
       <Product
         name="Weather wear"
-        img="/weather-wear.png"
+        img={weatherWearImage}
         link="https://judno.github.io/project-WeatherWear/"
         github="https://github.com/judno/project-WeatherWear"
       >
@@ -87,7 +91,7 @@ export function Home() {
                   {name}
                 </a>
                 <a href={github}>
-                  <img className="w-8" src="/github-dark.png" />
+                  <img className="w-8" src={githubIcon} />
                 </a>
               </li>
             ))}

@@ -1,4 +1,5 @@
-import { Hero } from './Hero';
+import { Hero } from "./Hero";
+import githubIcon from "./images/github-dark.png";
 
 export function Product({ name, img, link, github, dark, children }) {
   return (
@@ -13,14 +14,14 @@ export function Product({ name, img, link, github, dark, children }) {
           <a href={github}>
             <img
               alt="Github icon"
-              src="/github-dark.png"
+              src={githubIcon}
               className="h-8 sm:h-16 cursor-pointer"
             />
           </a>
         </div>
         <div
           className={`flex flex-col ${
-            dark ? 'sm:flex-row-reverse' : 'sm:flex-row'
+            dark ? "sm:flex-row-reverse" : "sm:flex-row"
           } items-center gap-10`}
         >
           <img
