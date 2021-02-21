@@ -1,8 +1,6 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Footer } from "./Footer";
-import { Header } from "./Header";
-import { Home } from "./Home";
-import { Products } from "./Products";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Header } from './Header';
+import { Home } from './Home';
 
 function App() {
   return (
@@ -13,7 +11,6 @@ function App() {
           <Home />
         </Route>
       </Switch>
-      <Footer />
     </BrowserRouter>
   );
 }
