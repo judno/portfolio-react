@@ -49,7 +49,8 @@ export function Home() {
             src="https://avatars.githubusercontent.com/u/69154965?s=460&u=7a2dcd4221f476004de06e088deb154fd42c5dbc&v=4"
           />
           <p className="text-lg sm:text-2xl text-white tracking-wide">
-            [[TODO BIO]]
+            Im a web developer from Melbourne, passionate about designing
+            aesthetic interfaces and writing semantic code.
           </p>
         </div>
       </Hero>
@@ -69,7 +70,8 @@ export function Home() {
         link="https://hoops-judno.herokuapp.com/"
         github="https://github.com/judno/hoops"
       >
-        [[TODO Hoops description]]
+        A web app that lets you view and log every basketball hoop around the
+        world.
       </Product>
       <Product
         name="Weather wear"
